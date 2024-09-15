@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediheal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .container {
+            display: flex;
+        }
+        .left-column {
+            width: 50%;
+            padding: 20px;
+        }
+        .right-column {
+            width: 50%;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #dc0b3c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .stats {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .stat {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px;
+        }
+        .stat h3 {
+            margin: 0;
+        }
+        .services-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+        .service {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+        .looking-for-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+        .looking-for {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+        .doctors-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+        .doctor {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+        .right-column .section {
+            background-color: #0f86e1;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .right-column .title {
+            margin-bottom: 20px;
+        }
+        .right-column .sub-title {
+            margin-bottom: 10px;
+        }
+        .right-column .description {
+            margin-bottom: 20px;
+        }
+        .right-column .testimonials {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+        .testimonial {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .testimonial .image {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .testimonial .name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .right-column .cta {
+            margin-top: 20px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="section">
+                <h1>Mediheal</h1>
+                <h2>We Care About Your Health</h2>
+                <button class="button">Book Now</button>
+                <button class="button">Sign Up</button>
+            </div>
+            <div class="section">
+                <div class="stats">
+                    <div class="stat">
+                        <h3>95%</h3>
+                    </div>
+                    <div class="stat">
+                        <h3>1,500+</h3>
+                    </div>
+                    <div class="stat">
+                        <h3>3,000+</h3>
+                    </div>
+                    <div class="stat">
+                        <h3>100+</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Our Best Services</h2>
+                <div class="services-section">
+                    <div class="service">
+                        <img src="icon.svg" alt="Icon">
+                        <h3>All Specialist</h3>
+                    </div>
+                    <div class="service">
+                        <img src="icon.svg" alt="Icon">
+                        <h3>Private & Secure</h3>
+                    </div>
+                    <div class="service">
+                        <img src="icon.svg" alt="Icon">
+                        <h3>Million Customers</h3>
+                    </div>
+                    <div class="service">
+                        <img src="icon.svg" alt="Icon">
+                        <h3>Chatbot Support</h3>
+                    </div>
+                    <div class="service">
+                        <img src="icon.svg" alt="Icon">
+                        <h3>Baby Health</h3>
+                    </div>
+                    <div class="service">
+                        <img src="icon.svg" alt="Icon">
+                        <h3>Stomach</h3>
+                    </div>
+                    <div class="service">
+                        <img src="icon.svg" alt="Icon">
+                        <h3>Psychiatry</h3>
+                    </div>
+                    <div class="service">
+                        <img src="icon.svg" alt="Icon">
+                        <h3>Urology</h3>
+                    </div>
+                    <div class="service">
+                        <img src="icon.svg" alt="Icon">
+                        <h3>Dermatology</h3>
+                    </div>
+                    <div class="service">
+                        <img src="icon.svg" alt="Icon">
+                        <h3>Infectious Disease</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Are You Looking For:</h2>
+                <div class="looking-for-section">
+                    <div class="looking-for">
+                        <h3>Doctors</h3>
+                    </div>
+                    <div class="looking-for">
+                        <h3>Consult</h3>
+                    </div>
+                    <div class="looking-for">
+                        <h3>Pharmacy</h3>
+                    </div>
+                    <div class="looking-for">
+                        <h3>Diagnostics</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Our Best Doctors</h2>
+                <div class="doctors-section">
+                    <div class="doctor">
+                        <img src="doctor.jpg" alt="Doctor">
+                        <h3>Dr. Alex, Ph.D.</h3>
+                    </div>
+                    <div class="doctor">
+                        <img src="doctor.jpg" alt="Doctor">
+                        <h3>Dr. Robart, Ph.D.</h3>
+                    </div>
+                    <div class="doctor">
+                        <img src="doctor.jpg" alt="Doctor">
+                        <h3>Dr. Nancy, Ph.D.</h3>
+                    </div>
+                    <div class="doctor">
+                        <img src="doctor.jpg" alt="Doctor">
+                        <h3>Dr. Richard, Ph.D.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="section">
+                <h2 class="title">Easy Steps And Get Your Solution</h2>
+                <div class="services-section">
+                    <div class="service">
+                        <img src="icon.svg" alt="Icon">
+                        <h3>Check Doctors Profile</h3>
+                    </div>
+                    <div class="service">
+                        <img src="icon.svg" alt="Icon">
+                        <h3>Request Consultation</h3>
+                    </div>
+                    <div class="service">
+                        <img src="icon.svg" alt="Icon">
+                        <h3>Receive Your Consultation</h3>
+                    </div>
+                    <div class="service">
+                        <img src="icon.svg" alt="Icon">
+                        <h3>Get Your Solution</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="title">Best Doctor Anywhere And Anytime</h2>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                <button class="button">Find Doctor Now</button>
+            </div>
+            <div class="section">
+                <h2 class="title">Urgent Online Care Solution Your Problem</h2>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                <button class="button">Take Appointment</button>
+            </div>
+            <div class="section">
+                <h2 class="title">What People Say About Us</h2>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <img src="testimonial-image.jpg" alt="Testimonial Image" class="image">
+                        <h3 class="name">John Doe</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                    </div>
+                    <div class="testimonial">
+                        <img src="testimonial-image.jpg" alt="Testimonial Image" class="image">
+                        <h3 class="name">Jane Doe</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="title">Want to Register Easily?</h2>
+                <button class="button">Submit Here</button>
+            </div>
+            <footer>
+                <p>&copy; 2024 Meadiheal. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
